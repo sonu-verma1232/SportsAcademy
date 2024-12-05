@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cricket</title>
+<style type="text/css">
+
+/* Element Selector  */
+h1{
+
+color: red;
+text-align: center;
+font-family: cursive;
+text-decoration: underline;
+text-shadow: -3px 5px 6px green;
+/* horizontal shadow,vertical shadow,blur effect,color */
+
+}
+
+/* Element class selector */
+
+p.design{
+
+color: green;
+font-size: 30px;
+font-weight: bold; 
+border: 3px dotted red;   /* width style color  */
+width: 60%;
+margin-left: 20%;
+text-indent: 7%;
+
+}
+
+/* Class/Global class selector */
+
+.box{
+
+width: 200px;
+height: 200px;
+background-color: red;
+border: 4px solid green;
+border-radius: 100%;
+margin-left: 10px;
+
+
+
+}
+
+.box img{
+
+margin-left: 0px;
+border: 0px;
+width: 100%;
+height: 100%;
+transition: tranform 0.5s;
+
+}
+
+
+/* Pseudo class or element */
+
+.box img:hover {
+	transform: scale(1.05);
+}
+
+div.stadium{
+
+margin-left: 50px;
+width: 50%;
+height: 400px;
+background-color: cyan;
+float: left;
+
+}
+
+
+/* Group Selector */
+
+table,th,td{
+
+border-collapse: collapse;
+border: 3px solid red;
+
+}
+
+table.st{
+
+width: 200px;
+height: 200px;
+margin: 100px;
+margin-left: 200px;
+
+}
+
+</style>
+</head>
+<body>
+<h1> About Cricket</h1>
+<a href="/SportsAcademy/jsp/SportsGallery.jsp">Back</a>
+<p class="design">Cricket is a game of 11 players. It is played with Bat and Ball.</p>
+
+<div style="width:16%;height: 800px; background-color: green;float: left;">
+
+<div class="box">
+
+<img alt="MS Dhoni" src="/SportsAcademy/images/msd.jpeg" class="box">
+
+</div>
+
+<div class="box">
+
+<img alt="Virat Kohli" src="/SportsAcademy/images/virat-kohli.avif" class="box">
+
+</div>
+
+<div class="box">
+
+<img alt="Rohit Sharma" src="/SportsAcademy/images/rohitsharma.jpg" class="box">
+
+</div>
+
+</div>
+
+<div class="stadium">
+
+<table class="st">
+
+<thead>
+<tr>
+<th>Stadium Name</th>
+<th>City Name</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Ekana Stadium</td>
+<td>Lucknow</td>
+</tr>
+
+<tr>
+<td>Wankhade Stadium</td>
+<td>Mumbai</td>
+</tr>
+</tbody>
+
+</table>
+
+</div>
+
+</body>
+</html>

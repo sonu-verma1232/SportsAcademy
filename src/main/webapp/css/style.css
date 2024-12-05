@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+body.bg{
+	/* background-color: cyan; */
+	background-image: url("/SportsAcademy/images/cricketplaying.webp");
+	background-repeat: no-repeat;
+	/* background-size: 300px 200px;
+	background-position: top; */
+	
+	 background-size: cover;      /*cover => image will be crop */
+	/* background-size: contain; */
+	background-attachment: scroll;
+}
+
+a{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: cursive;
+	background-color: pink;
+	
+}
+
+a:link {
+	color: black;
+}
+
+a:visited {
+	color: coral;
+}
+
+a:hover {
+	color:white;
+	background-color: navy;
+	text-decoration: underline red;
+	transition : 0.5s;
+	
+	
+}
+
+
+
+a:active {
+	color: red;
+	
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Flex Demo Contents</title>
+
+<style type="text/css">
+
+.flex-container
+{
+display: flex;
+width: 80%;
+height: 800px;
+background-color: cyan;
+gap:20px;
+/* flex-direction: column; */
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+.items{
+
+width: 20%; 
+height: 400px;
+
+}
+
+.container-box
+{
+display: flex;
+flex-direction: column;
+gap:10px;
+justify-content: center;
+align-items: center;
+}
+
+img{
+width: 80%;
+height: 100px;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div class="flex-container">
+
+<div class="items container-box" style="background-color: red;">
+
+<img alt="" src="/SportsAcademy/images/cricket.jpg">
+
+<img alt="" src="/SportsAcademy/images/cricket.jpg">
+
+<img alt="" src="/SportsAcademy/images/cricket.jpg">
+
+</div>
+
+<div class="items" style="background-color: green;"></div>
+
+<div class="items" style="background-color: blue;"></div>
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<style>
+.nav-link, .navbar-brand {
+	color: white;
+	font-size: 20px;
+	font-family: cursive;
+}
+
+.dropdown-item {
+	color: blue;
+	font-size: 20px;
+	font-family: cursive;
+}
+</style>
+
+
+<nav class="navbar navbar-expand-lg" style="background-color: #1fa2e0;">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="/SportsAcademy/jsp/index.jsp">Sports
+			Academy</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+			data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item"><a class="nav-link active"
+					aria-current="page" href="/SportsAcademy/member/member_home.jsp">
+						<i class="fas fa-home" style="color: green;"></i>
+				</a></li>
+
+
+				<li class="nav-item"><a class="nav-link"
+					href="/SportsAcademy/member/member_feedback.jsp">Feedback</a></li>
+
+				<!-- <li class="nav-item"><a class="nav-link" href="#">Membership
+						Plans</a></li> -->
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false"> Profile </a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item"
+							href="/SportsAcademy/member/member_home.jsp">View Profile</a></li>
+						<li><a class="dropdown-item"
+							href="/SportsAcademy/member/member_edit_profile.jsp">Edit Profile</a></li>
+
+					</ul></li>
+					
+					<li class="nav-item"><a class="nav-link"
+					href="/SportsAcademy/MemberLogout">LogOut</a></li>
+
+				<!-- <li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false"> Member </a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Registration</a></li>
+						<li><a class="dropdown-item"
+							href="/SportsAcademy/member/member_login.jsp">Login</a></li>
+
+						<li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+					</ul></li> -->
+
+
+			</ul>
+
+		</div>
+	</div>
+</nav>
