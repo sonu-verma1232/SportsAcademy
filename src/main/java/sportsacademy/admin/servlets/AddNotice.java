@@ -20,52 +20,54 @@ import sportsacademy.dao.AdminDao;
 @WebServlet("/AddNotice")
 public class AddNotice extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public AddNotice() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public AddNotice() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		String notice = request.getParameter("notice");
-		
+
 		Date date = new Date();
 		long dt = date.getTime();
-		java.sql.Date d  = new java.sql.Date(dt);
-		
+		java.sql.Date d = new java.sql.Date(dt);
+
 		Notice n = new Notice();
 		n.setContent(notice);
 		n.setDate(d);
-		
+
 		AdminDao dao = new AdminDao();
 		int status = dao.addNotice(n);
-		
-		if(status>0) {
+
+		if (status > 0) {
 			request.setAttribute("message", "Notice Added Succeessfully!");
 			RequestDispatcher rd = request.getRequestDispatcher("/admin/add_notice.jsp");
 			rd.forward(request, response);
-		}
-		else {
+		} else {
 			request.setAttribute("message", "Something Went Wrong!");
 			RequestDispatcher rd = request.getRequestDispatcher("/admin/add_notice.jsp");
 			rd.forward(request, response);
 		}
-		
-		
+
 	}
 
 }

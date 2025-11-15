@@ -3,10 +3,8 @@ package sportsacademy.databaseinfo;
 import java.sql.*;
 import java.util.ResourceBundle;
 public class DBConnection {
-
 	public static Connection con; // interface
 	private static ResourceBundle rb;
-
 	public static Connection openConnection() {
 		try {
 			rb = ResourceBundle.getBundle("sportsacademy/databaseinfo/db_info");
